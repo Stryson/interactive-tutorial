@@ -1,0 +1,210 @@
+@import config
+@import media
+@import animation   
+
+// главная
+#section
+    background-color: $color1
+    #header
+        font-weight: 700
+        padding-top: 3rem
+        font-size: 1.2rem
+        .container
+            display: grid
+            grid-template-columns: 1fr 1fr
+            grid-gap: 2rem
+            opacity: 0
+            .logo
+                display: flex
+                justify-content: flex-start
+                align-items: center
+            .about
+                display: flex
+                justify-content: flex-end
+                align-items: center
+            .link
+                color: $color2
+                text-decoration: none
+                .svg-logo
+                    transform-origin: 50% 50%
+            &.active
+                opacity: 1
+                animation: down 1s
+    #main
+        padding-top: 5rem
+        .container
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 2rem
+            .left
+                .title, .text, .btn
+                    opacity: 0
+                    &.active
+                        opacity: 1
+                        animation: right 1s
+                .text
+                    color: $color3
+                    font-size: 1.3rem
+                .btn
+                    display: inline-block
+                    text-decoration: none
+                    padding: 1.2rem 2rem
+                    border-radius: 3px
+                    background-color: $color4
+                    color: $color1
+                    font-weight: 700
+                    margin-top: 2rem
+                    font-size: 1.1rem
+            .right
+                opacity: 0
+                padding-top: 2rem
+                .main-picture
+                    width: 100%
+                &.active
+                    opacity: 1
+                    animation: scale 1s
+    #labNum
+        padding: 6rem 0 7rem 0
+        .container
+            opacity: 0
+            &.active
+                opacity: 1
+                animation: scale 1s
+            .title
+                margin-bottom: 0
+            .text
+                color: $color3
+                margin-bottom: 1.5rem
+                font-size: 1.1rem
+                
+            #chapters, .chapterOne, .chapterTwo
+                display: grid
+                grid-template-columns: repeat(3, 1fr)
+                grid-gap: .7rem
+                .btn
+                    text-decoration: none
+                    padding: .75rem .5rem
+                    border: 3px solid $color5
+                    border-radius: 5px
+                    background-color: $color1
+                    color: $color2
+                    font-weight: 700
+                    font-size: .9rem
+                    &:hover
+                        background-color: $color4
+                        color: $color1
+                .btnChapter
+                    &.active
+                        background-color: $color4
+                        color: $color1
+            .chapterOne, .chapterTwo
+                &.hidden        
+                    display: none
+                &.show
+                    display: grid
+                    animation: right 1s
+#firstBox
+    padding: 7rem 0
+    background-color: $color3
+    color: $color1
+    text-align: center
+    .container
+        .fB-header
+            opacity: 0
+            .text
+                font-size: 1.3rem
+                margin-bottom: 10px
+            &.active
+                opacity: 1
+                animation: up 1s
+        .card-grid
+            padding-top: 5rem
+            display: grid
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 2rem
+            .card
+                padding: 2.5rem
+                background-color: $color2
+                text-align: left
+                font-size: 1.2rem
+                border-radius: 3px
+                opacity: 0
+                .title
+                    margin-bottom: 2rem
+                &.active
+                    opacity: 1
+                    animation: right 1s
+#secondBox
+    padding: 7rem 0
+    background-color: $color1
+    .container
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 4rem
+        .left
+            &.active
+                opacity: 1
+                animation: right 1s
+            .sticky-fix
+                position: sticky
+                top: 7rem
+                .title, .text
+                    opacity: 0
+                    &.active
+                        opacity: 1
+                        animation: right 1s
+                .text
+                    color: $color3
+                    font-size: 1.3rem
+        .right
+            .sticky-card
+                padding: 2.5rem
+                background-color: $color2 
+                color: $color1
+                border-radius: 3px
+                margin-bottom: 2rem
+                opacity: 0
+                &.active
+                    opacity: 1
+                    animation: scale 1s
+                .header-card
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    margin-bottom: 2rem
+                    .title
+                        margin-bottom: 0
+                    .type
+                        margin-left: 1rem
+                        color: $color6
+                        font-weight: 700
+                .content-card
+                    .text
+                        font-size: 1.1rem
+                        
+#thirdBox
+    padding: 7rem 0
+    background-color: $color4
+    color: $color1
+    text-align: center
+    .container
+        display: flex
+        justify-content: center
+        align-items: center
+        opacity: 0
+        .conclusion
+            .text
+                font-size: 1.2rem
+            .btn
+                display: inline-block
+                text-decoration: none
+                padding: 20px 30px
+                border-radius: 3px
+                background-color: $color1
+                color: $color2
+                font-weight: 700
+                margin-top: 2rem
+                font-size: 1.1rem
+        &.active
+            opacity: 1
+            animation: scale 1s

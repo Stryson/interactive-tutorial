@@ -1,0 +1,106 @@
+@import config
+@import media
+@import animation
+
+// лаборатория
+#laboratory
+    padding: 2rem 0
+    background-color: $color3
+    min-width: 1200px
+    .container
+        display: grid
+        grid-template-columns: 1fr
+        grid-gap: .5rem
+        .tab-pane
+            animation: left 1s
+            display: grid
+            grid-template-columns: 3fr 1fr
+            min-height: 500px
+            background-color: $color2
+            border: 3px solid $color5
+            border-radius: 5px
+            color: $color1
+            .m-header
+                grid-column: 1 / -1
+                padding: 2rem
+                .labName
+                    text-transform: uppercase
+                    font-size: 1.2rem
+                .bold
+                    font-weight: 700
+                .text
+                    &:last-child
+                        margin-bottom: 0
+            .lab1, .lab2
+                grid-template-columns: repeat(2, 1fr)
+                grid-template-rows: 2fr 1fr
+                #info1, #info2
+                    grid-row: 2 / 3
+            .lab2
+                grid-template-columns: repeat(4, 1fr)
+                .svgCalorimeter
+                    grid-column: 1 / 2
+                .svgVessel
+                    grid-column: 4 / 5
+                .svgLibra
+                    grid-column: 2 / 4
+                #info1
+                    grid-column: 1 / 3
+                #info2
+                    grid-column: 3 / 5
+            .field
+                border-top: 3px solid $color5
+                display: grid
+                grid-gap: 2rem
+                padding: 2rem
+                .object-check
+                    animation: scaleReverse 1s
+                .droppable, #info1, #info2
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                #info1, #info2
+                    text-align: center
+                    font-weight: 700
+                    border: 3px solid $color5
+                    border-radius: 5px
+                    padding: 1rem
+            .tools
+                padding: 2rem
+                border-left: 3px solid $color5
+                border-top: 3px solid $color5
+                display: grid
+                grid-template-columns: repeat(2, 70px)
+                grid-template-rows: repeat(5, 70px)
+                grid-gap: 1.5rem
+                .draggable
+                    cursor: pointer
+        nav
+            animation: right 1s
+            display: grid
+            grid-template-columns: repeat(8, 1fr)
+            grid-gap: .5rem
+            .nav-link
+                background-color: $color3
+                text-decoration: none
+                color: $color1
+                border: 3px solid $color1
+                border-radius: 5px
+                font-weight: 700
+                font-size: 1.1rem
+                text-align: center
+                padding: 0 1rem
+                &.index
+                    background-color: $color4
+                    color: $color1
+                &.chapter1
+                    grid-column: 6 / 9
+                    background-color: $color4
+                    color: $color1
+                &.chapter2
+                    grid-column: 6 / 9
+                    background-color: $color4
+                    color: $color1
+                &.active
+                    background-color: $color1
+                    color: $color2 

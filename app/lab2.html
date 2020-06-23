@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Измерение удельной теплоемкости твердого тела. Лаборатория</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<meta name="theme-color" content="#b8c1ec">
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/dest/preview.jpg">
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body>
+
+	<div id="laboratory">
+		<div class="container">
+			<div class="tab-pane">
+				<div class="m-header">
+					<h3 class="labName">Измерение удельной теплоемкости твердого тела</h3>
+					<p class="text"><span class="bold">Цель работы. </span>Определить удельную теплоемкость
+						металлического цилиндра.</p>
+					<p class="text"><span class="bold">Приборы и материалы. </span>Стакан с водой, калориметр,
+						термометр, весы, гири, металлический цилиндр на нити, сосуд с горячей водой</p>
+				</div>
+				<div class="field lab2">
+					<div class="droppable svgCalorimeter">
+						<svg class="calorimeter" xmlns="http://www.w3.org/2000/svg" width="137" height="137"
+							viewBox="0 0 137 137">
+							<title>Калориметр</title>
+							<g>
+								<rect fill="#fff" stroke="#121629" stroke-width="3" x="1.5" y="1.5" width="134"
+									height="134" rx="11" />
+								<path fill="none" stroke-linecap="round" stroke="#121629" stroke-width="3"
+									d="M118.5,19.5v89.24a8.5,8.5,0,0,1-8.21,8.76H26.71a8.5,8.5,0,0,1-8.21-8.76V19.5" />
+								<path id="calorimeterFull" fill="none" stroke-linecap="round" stroke="#121629"
+									stroke-width="3"
+									d="M108.5,23.25V94.73a6.81,6.81,0,0,1-6.57,7H35.07a6.81,6.81,0,0,1-6.57-7V23.25" />
+								<path id="calorimeterHalf" fill="#fff" stroke="#121629" stroke-linecap="round"
+									stroke-width="3"
+									d="M108.5,58.12V94.73a6.81,6.81,0,0,1-6.57,7H35.07a6.81,6.81,0,0,1-6.57-7V58.12" />
+								<polyline fill="none" stroke="#121629" stroke-width="3"
+									points="55 117.75 68.5 102.75 82 117.75" />
+								<polyline fill="none" stroke="#121629" stroke-width="3"
+									points="25 117.75 38.5 102.75 52 117.75" />
+								<polyline fill="none" stroke="#121629" stroke-width="3"
+									points="85 117.75 98.5 102.75 112 117.75" />
+							</g>
+						</svg>
+					</div>
+					<div class="droppable svgLibra">
+						<svg class="libra" xmlns="http://www.w3.org/2000/svg" width="260.5" height="193.96"
+							viewBox="0 0 260.5 193.96">
+							<title>Весы</title>
+							<g>
+								<line stroke-width="3" stroke-linecap="round" fill="none" stroke="#121629" x1="130.14"
+									y1="1.5" x2="130.14" y2="161.49" />
+								<rect stroke-linejoin="round" fill="#b8c1ec" stroke-width="3" stroke="#121629" x="16.96"
+									y="14.93" width="226.37" height="14.83" rx="5" />
+								<circle fill="#eebbc3" stroke-linejoin="round" stroke-width="3" stroke="#121629"
+									cx="130.14" cy="22.35" r="11.03" />
+								<path fill="#eebbc3" stroke-linejoin="round" stroke-width="3" stroke="#121629"
+									d="M106.1,154.14H154a3.67,3.67,0,0,1,3.67,3.68V172.5H102.61V157.82A3.69,3.69,0,0,1,106.1,154.14Z" />
+								<path stroke-linejoin="round" fill="#b8c1ec" stroke-width="3" stroke-linecap="round"
+									stroke="#121629"
+									d="M70.37,192.46c0-13.2,20.88-11,28.79-23.91h62c11.13,12.95,28.79,10.71,28.79,23.91H70.37" />
+								<line stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke="#121629"
+									fill="none" x1="2.4" y1="70.33" x2="53.89" y2="70.33" />
+								<line stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke="#121629"
+									fill="none" x1="206.53" y1="70.33" x2="258.02" y2="70.33" />
+								<path stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke="#121629"
+									fill="none"
+									d="M28.45,23.19,52.27,62.63a19,19,0,0,1,1.84,16.16c-25.86,0-25.86.14-51.77.14A18.81,18.81,0,0,1,4.17,62.55Z" />
+								<path stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" stroke="#121629"
+									fill="none"
+									d="M232.58,23.19l23.81,39.44a18.94,18.94,0,0,1,1.83,16.16c-23,0-41,.14-51.76.14a18.91,18.91,0,0,1,1.84-16.38Z" />
+								<circle stroke-width="2.5" fill="#eebbc3" stroke-linejoin="round" stroke-linecap="round"
+									stroke="#121629" cx="232.28" cy="22.5" r="3.67" />
+								<circle stroke-miterlimit="10" stroke-width="2.5" fill="#eebbc3" stroke="#121629"
+									cx="28.15" cy="22.5" r="3.67" />
+							</g>
+						</svg>
+					</div>
+					<div class="droppable svgVessel">
+						<svg class="vessel" xmlns="http://www.w3.org/2000/svg" width="137" height="137"
+							viewBox="0 0 137 137">
+							<title>Сосуд</title>
+							<g>
+								<rect fill="#fff" stroke="#121629" stroke-width="3" x="1.5" y="1.5" width="134"
+									height="134" rx="11" />
+								<path id="vessel" fill="#fff" stroke-linecap="round" stroke="#121629" stroke-width="3"
+									d="M107.5,19.5v89.24c0,4.84-2.9,8.76-6.47,8.76H35.2c-3.58,0-6.47-3.92-6.47-8.76V19.5" />
+								<line fill="#b8c1ec" stroke-width="3" stroke-linecap="round" stroke="#121629"
+									stroke="#121629" x1="63.54" y1="53.9" x2="73.54" y2="53.9" />
+								<line fill="#b8c1ec" stroke-width="3" stroke-linecap="round" stroke="#121629"
+									stroke="#121629" x1="56.04" y1="33.9" x2="81.04" y2="33.9" />
+								<line fill="#b8c1ec" stroke-width="3" stroke-linecap="round" stroke="#121629"
+									stroke="#121629" x1="56.04" y1="73.9" x2="81.04" y2="73.9" />
+								<line fill="#b8c1ec" stroke-width="3" stroke-linecap="round" stroke="#121629"
+									stroke="#121629" x1="63.54" y1="93.9" x2="73.54" y2="93.9" />
+								<line fill="#b8c1ec" stroke-width="3" stroke-linecap="round" stroke="#121629"
+									stroke="#121629" x1="63.54" y1="43.9" x2="73.54" y2="43.9" />
+								<line fill="#b8c1ec" stroke-width="3" stroke-linecap="round" stroke="#121629"
+									stroke="#121629" x1="63.54" y1="63.9" x2="73.54" y2="63.9" />
+								<line fill="#b8c1ec" stroke-width="3" stroke-linecap="round" stroke="#121629"
+									stroke="#121629" x1="63.54" y1="83.9" x2="73.54" y2="83.9" />
+								<line fill="#b8c1ec" stroke-width="3" stroke-linecap="round" stroke="#121629"
+									stroke="#121629" x1="63.54" y1="103.9" x2="73.54" y2="103.9" />
+							</g>
+						</svg>
+					</div>
+					<div id="info2">-</div>
+					<div id="info1">-</div>
+				</div>
+				<div class="tools">
+					<div class="draggable svgDrop">
+						<svg class="drop" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+							<title>Вода</title>
+							<g>
+								<rect fill="#b8c1ec" stroke="#121629" stroke-width="3" x="1.5" y="1.5" width="67"
+									height="67" rx="5.5" />
+								<path fill="#eebbc3" stroke="#121629" stroke-width="3"
+									d="M53.5,41.51A18.75,18.75,0,0,1,35,60.5a18.75,18.75,0,0,1-18.5-19c0-4.93,2.64-10.16,6.16-14.89a74.49,74.49,0,0,1,10.4-11.06,2.91,2.91,0,0,1,3.88,0,74.49,74.49,0,0,1,10.4,11.06C50.86,31.35,53.5,36.58,53.5,41.51Z" />
+								<path fill="none" stroke="#121629" stroke-width="2.5" stroke-linecap="round"
+									d="M26,37.22a3.08,3.08,0,0,1,5.91,0" />
+								<path fill="none" stroke="#121629" stroke-width="2.5" stroke-linecap="round"
+									d="M39,37.22a3.08,3.08,0,0,1,5.91,0" />
+								<path fill="none" stroke="#121629" stroke-width="2.5" stroke-linecap="round"
+									d="M39,42.43a3.61,3.61,0,0,1-3.5,2,3.61,3.61,0,0,1-3.5-2" />
+								<path fill="none" stroke="#121629" stroke-width="3" stroke-linecap="round"
+									d="M47.33,19C50.22,17.94,52,16.5,52,14.92,52,11.65,44.39,9,35,9s-17,2.65-17,5.92c0,1.42,1.43,2.72,3.83,3.74" />
+							</g>
+						</svg>
+					</div>
+					<div class="draggable svgDropH">
+						<svg class="dropH" xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+							viewBox="0 0 70 70">
+							<title>Горячая вода</title>
+							<g>
+								<rect fill="#fff" stroke="#121629" stroke-width="3" x="1.5" y="1.5" width="67"
+									height="67" rx="5.5" />
+								<path fill="#eebbc3" stroke="#121629" stroke-width="3"
+									d="M53.5,41.51A18.75,18.75,0,0,1,35,60.5a18.75,18.75,0,0,1-18.5-19c0-4.93,2.64-10.16,6.16-14.89a74.49,74.49,0,0,1,10.4-11.06,2.91,2.91,0,0,1,3.88,0,74.49,74.49,0,0,1,10.4,11.06C50.86,31.35,53.5,36.58,53.5,41.51Z" />
+								<path fill="none" stroke="#121629" stroke-width="2.5" stroke-linecap="round"
+									d="M26,37.22a3.08,3.08,0,0,1,5.91,0" />
+								<path fill="none" stroke="#121629" stroke-width="2.5" stroke-linecap="round"
+									d="M39,37.22a3.08,3.08,0,0,1,5.91,0" />
+								<path fill="none" stroke="#121629" stroke-width="2.5" stroke-linecap="round"
+									d="M39,42.43a3.61,3.61,0,0,1-3.5,2,3.61,3.61,0,0,1-3.5-2" />
+								<path fill="none" stroke="#121629" stroke-linecap="round" stroke-width="3"
+									d="M47.33,19C50.22,17.94,52,16.5,52,14.92,52,11.65,44.39,9,35,9s-17,2.65-17,5.92c0,1.42,1.43,2.72,3.83,3.74" />
+							</g>
+						</svg>
+					</div>
+					<div class="draggable svgWeight">
+						<svg class="weight" xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+							viewBox="0 0 70 70">
+							<title>Гиря</title>
+							<g>
+								<rect fill="#fff" stroke="#121629" stroke-width="3" x="1.5" y="1.5" width="67"
+									height="67" rx="5.5" />
+								<path fill="#b8c1ec" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+									stroke="#121629"
+									d="M21.92,18.42V57.24c0,2.32,6,4.21,13.5,4.21s13.5-1.89,13.5-4.21V18.42Z" />
+								<ellipse fill="#eebbc3" stroke-linecap="round" stroke-linejoin="round"
+									stroke-width="2.5" stroke="#121629" cx="35.42" cy="18.42" rx="13.5" ry="4.22" />
+								<rect fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+									stroke="#121629" x="32.53" y="7.95" width="5.91" height="10.13" rx="2.95" />
+								<path fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"
+									stroke="#121629" d="M31.09,37.89a5.92,5.92,0,0,0,4.33,1.63,6,6,0,0,0,4.31-1.6" />
+								<circle fill="#121629" cx="43.44" cy="31.5" r="2" />
+								<circle fill="#121629" cx="27.4" cy="31.5" r="2" />
+							</g>
+						</svg>
+					</div>
+					<div class="draggable svgThermometer">
+						<svg class="thermometer" xmlns="http://www.w3.org/2000/svg" width="70" height="70"
+							viewBox="0 0 70 70">
+							<title>Термометр</title>
+							<g>
+								<rect fill="#fff" stroke="#121629" stroke-width="3" x="1.5" y="1.5" width="67"
+									height="67" rx="5.5" />
+								<path fill="#fff" stroke-miterlimit="10" stroke="#121629" stroke-width="3"
+									d="M34.93,7.94a8,8,0,0,1,8,8V53.76a8,8,0,0,1-16,0V15.94a8,8,0,0,1,8-8Z" />
+								<line fill="#121629" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+									stroke="#121629" x1="34.93" y1="15" x2="34.93" y2="50" />
+								<line fill="#121629" stroke="#eebbc3" stroke-linecap="round" stroke-miterlimit="10"
+									stroke-width="3" x1="34.93" y1="30.5" x2="34.93" y2="49.5" />
+								<line fill="#b8c1ec" stroke="#121629" stroke-width="3" stroke-miterlimit="10"
+									stroke-linecap="round" x1="47.93" y1="46.5" x2="52.93" y2="46.5" />
+								<line fill="#b8c1ec" stroke="#121629" stroke-width="3" stroke-miterlimit="10"
+									stroke-linecap="round" x1="47.93" y1="36.5" x2="52.93" y2="36.5" />
+								<line fill="#b8c1ec" stroke="#121629" stroke-width="3" stroke-miterlimit="10"
+									stroke-linecap="round" x1="47.93" y1="26.5" x2="52.93" y2="26.5" />
+								<line fill="#b8c1ec" stroke="#121629" stroke-width="3" stroke-miterlimit="10"
+									stroke-linecap="round" x1="47.93" y1="16.5" x2="52.93" y2="16.5" />
+							</g>
+						</svg>
+					</div>
+				</div>
+			</div>
+			<nav>
+				<a class="nav-link index" href="index.html">Главная</a>
+				<a class="nav-link" href="lab1.html">1</a>
+				<a class="nav-link active" href="#">2</a>
+				<a class="nav-link" href="lab3.html">3</a>
+				<a class="nav-link chapter2" href="lab4.html">II. Электрические явления</a>
+			</nav>
+		</div>
+	</div>
+
+	<script type="module" src="js/app.min.js"></script>
+
+</body>
+
+</html>

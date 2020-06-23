@@ -1,0 +1,112 @@
+// BREAKPOINT VIEWPORT SIZES AND MEDIA QUERIESZ
+
+// Customization Bootstrap vars from "app/libs/bootstrap/scss/_variables.scss"
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px)
+
+// ≥1200px
++media-breakpoint-down(lg)
+
+// ≥992px
++media-breakpoint-down(md)
+    #section
+        #main
+            .container
+                grid-template-columns: 1fr
+                .left
+                    grid-row: 2 / 3
+                .right
+                    padding-top: 0
+                    text-align: center
+    #secondBox
+        .container
+            grid-template-columns: 1fr    
+            .left
+                .sticky-fix
+                    position: static
+                    top: 0
+            .right
+                .sticky-card
+                    &:last-child   
+                        margin-bottom: 0
+
+// ≥768px
++media-breakpoint-down(sm)
+    body
+        h1
+            font-size: 3rem
+        h2
+            font-size: 2.5rem
+        h3
+            font-size: 1.6rem
+    #section
+        #header
+            .container
+                .about
+                    .link
+                        font-size: 1.1rem
+        #main
+            .container
+                .left
+                    .text
+                        font-size: 1.2rem
+                    .btn
+                        font-size: 1rem
+        #labNum
+            .container
+                #chapters, .chapterOne, .chapterTwo
+                    grid-template-columns: repeat(2, 1fr)
+    #firstBox
+        .container
+            .fB-header
+                .text
+                    font-size: 1.2rem
+            .card-grid
+                grid-template-columns: 1fr
+                .card
+                    .text
+                        font-size: 1.1rem
+    #secondBox
+        .container
+            .left
+                .sticky-fix
+                    .text
+                        font-size: 1.2rem
+    #thirdBox
+        .container
+            .conclusion
+                .btn
+                    font-size: 1rem
+
+// ≥576px
++media-breakpoint-down(xs)
+    body
+        h1
+            font-size: 2.7rem
+    #section
+        #header
+            .container
+                grid-template-columns: 1fr
+                grid-gap: 1rem
+                .logo, .about
+                    justify-content: center
+        #labNum
+            .container
+                #chapters, .chapterOne, .chapterTwo
+                    grid-template-columns: 1fr
+    #firstBox
+        .container
+            .card-grid
+                .card
+                    .title
+                        font-size: 1.7rem   
+    #secondBox
+        .container
+            .right
+                .sticky-card
+                    .header-card
+                        flex-direction: column
+                        justify-content: space-between
+                        align-items: flex-start
+                        .type
+                            margin-left: 0
+                            margin-top: 1rem
