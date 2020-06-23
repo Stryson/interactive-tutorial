@@ -1,4 +1,6 @@
 import lab1Handler from './lab1.js'
+import lab2Handler from './lab2.js'
+import lab3Handler from './lab3.js'
 
 document.addEventListener("DOMContentLoaded", function () {
 
@@ -186,6 +188,9 @@ document.addEventListener("DOMContentLoaded", function () {
 				lab1Handler(dragObject, dropElem)
 				break;
 			case 'lab2':
+				lab2Handler(dragObject, dropElem)
+				break;
+			case 'lab3':
 				lab2Handler(dragObject, dropElem)
 				break;
 		}

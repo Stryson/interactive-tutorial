@@ -1,6 +1,6 @@
 // VARIABLES & PATHS
 
-let preprocessor = 'sass', // Preprocessor (sass, scss, less, styl)
+let preprocessor = 'sass', // Preprocessor
     fileswatch   = 'html,htm,txt,json,md,woff2', // List of files extensions for watching & hard reload (comma separated)
     imageswatch  = 'jpg,jpeg,png,webp,svg', // List of images extensions for watching & compression (comma separated)
     baseDir      = 'app', // Base directory path without «/» at the end
