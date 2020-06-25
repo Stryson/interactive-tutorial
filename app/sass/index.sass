@@ -105,7 +105,7 @@
                     animation: right 1s
 #firstBox
     padding: 7rem 0
-    background-color: $color3
+    background-color: $color7
     color: $color1
     text-align: center
     .container
@@ -129,11 +129,18 @@
                 font-size: 1.2rem
                 border-radius: 3px
                 opacity: 0
-                .title
-                    margin-bottom: 2rem
                 &.active
                     opacity: 1
                     animation: right 1s
+            .card-header
+                display: grid
+                grid-template-columns: auto 1fr
+                grid-gap: 1rem
+                margin-bottom: 1rem
+                .card-icon, .card-name
+                    display: flex
+                    justify-content: flex-start
+                    align-items: center
 #secondBox
     padding: 7rem 0
     background-color: $color1

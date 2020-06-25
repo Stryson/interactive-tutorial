@@ -2,6 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
     $(document).ready(function () {
 
+        // ПОЛЗУНОК
+        $('#myRange').on("change", function () {
+            const slideRange = document.getElementById("myRange"),
+                slideInfo = document.getElementById("slide-info"),
+                value = slideRange.value;
+
+            slideInfo.innerText = "Масса гирь: " + value + " грамм";
+        });
+
         // ПЛАВНЫЕ СКРОЛЛ ПО ССЫЛКЕ
         $(".about").on("click", "a", function (event) {
             event.preventDefault();

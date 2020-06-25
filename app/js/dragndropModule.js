@@ -181,7 +181,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	DragManager.onDragEnd = (dragObject, dropElem) => {
 		// dragObject.elem.style.display = 'none';
 
-		const labName = document.getElementsByClassName("field")[0].classList[1];
+		const labName = document.getElementsByClassName("tab-pane")[0].classList[1];
 
 		switch (labName) {
 			case 'lab1':
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				lab2Handler(dragObject, dropElem)
 				break;
 			case 'lab3':
-				lab2Handler(dragObject, dropElem)
+				lab3Handler(dragObject, dropElem)
 				break;
 		}
 

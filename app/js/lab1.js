@@ -1,9 +1,11 @@
 export default function lab1Handler(dragObject, dropElem) {
+	const colorPink = 'rgb(238, 187, 195)', colorBlue = 'rgb(212, 216, 240)';
+
 	const info1 = document.getElementById("info1"),
 		info2 = document.getElementById("info2"),
-		glass = document.getElementById("glass"),
 		calorimeterHalf = document.getElementById("calorimeterHalf"),
-		calorimeterFull = document.getElementById("calorimeterFull");
+		calorimeterFull = document.getElementById("calorimeterFull"),
+		glass = document.getElementById("glass");
 
 	const svgDrop = dragObject.elem.classList.contains("svgDrop"),
 		svgDropH = dragObject.elem.classList.contains("svgDropH"),
@@ -15,27 +17,21 @@ export default function lab1Handler(dragObject, dropElem) {
 
 	// калориметр
 	if (svgCalorimeter) {
-		if (svgDrop && calorimeterHalf.style.fill !== 'none') {
-			dropElem.style.animation = 'fill-opacity 1s';
-			calorimeterHalf.style.fill = '#b8c1ec';
-			info1.innerText = '-';
-		}
-
 		if (svgDropH && calorimeterHalf.style.fill !== 'none') {
 			dropElem.style.animation = 'fill-opacity 1s';
-			calorimeterHalf.style.fill = '#eebbc3';
+			calorimeterHalf.style.fill = colorPink;
 			info1.innerText = '-';
 		}
 
-		if (svgDropC && calorimeterHalf.style.fill === 'rgb(238, 187, 195)') {
+		if (svgDropC && calorimeterHalf.style.fill === colorPink) {
 			dropElem.style.animation = 'fill-opacity2 1s';
 			calorimeterHalf.style.fill = 'none';
-			calorimeterFull.style.animation = 'cold-hot 2s infinite';
+			calorimeterFull.style.animation = 'cold-hot-cold 2s infinite';
 			info1.innerText = '-';
 		}
 
 		if (svgThermometer) {
-			if (calorimeterHalf.style.fill === 'rgb(238, 187, 195)') {
+			if (calorimeterHalf.style.fill === colorPink) {
 				info1.innerText = 'Начальная температура горячей воды: 70 °С';
 			}
 
@@ -49,12 +45,12 @@ export default function lab1Handler(dragObject, dropElem) {
 	if (svgGlass) {
 		if (svgDropC) {
 			dropElem.style.animation = 'fill-opacity 1s';
-			glass.style.fill = '#b8c1ec';
+			glass.style.fill = colorBlue;
 			info2.innerText = '-';
 		}
 
 		if (svgThermometer) {
-			if (glass.style.fill === 'rgb(184, 193, 236)') {
+			if (glass.style.fill === colorBlue) {
 				info2.innerText = 'Начальная температура холодной воды: 20 °С';
 			}
 		}
